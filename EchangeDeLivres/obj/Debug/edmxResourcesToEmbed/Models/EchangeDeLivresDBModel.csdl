@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblDetailLivreAjouter">
+    <Key>
+      <PropertyRef Name="IdLivreAjouter" />
+    </Key>
+    <Property Name="IdLivreAjouter" Type="Int32" Nullable="false" />
+    <Property Name="EtatLivreAjouter" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PrixLivreAjouter" Type="Single" />
+  </EntityType>
+  <EntityType Name="tblEtduiant">
+    <Key>
+      <PropertyRef Name="IdEtudiant" />
+    </Key>
+    <Property Name="IdEtudiant" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="NomEtudiant" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EmailEtd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AdresseEtd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MotPassEtd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblGestionnaire">
+    <Key>
+      <PropertyRef Name="IdGestionnaire" />
+    </Key>
+    <Property Name="IdGestionnaire" Type="Int32" Nullable="false" />
+    <Property Name="NomGestionnaire" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EmailGestionnaire" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MotPassGestionnaire" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AdresseCoop" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tlbLivre">
+    <Key>
+      <PropertyRef Name="IdLivre" />
+    </Key>
+    <Property Name="IdLivre" Type="Int32" Nullable="false" />
+    <Property Name="CodeLivre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TitreLivre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AuteurLivre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NbPagesLivre" Type="Int32" Nullable="false" />
+    <Property Name="PrixLivre" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblDetailLivreAjouters" EntityType="Self.tblDetailLivreAjouter" />
+    <EntitySet Name="tblEtduiants" EntityType="Self.tblEtduiant" />
+    <EntitySet Name="tblGestionnaires" EntityType="Self.tblGestionnaire" />
+    <EntitySet Name="tlbLivres" EntityType="Self.tlbLivre" />
+  </EntityContainer>
+</Schema>

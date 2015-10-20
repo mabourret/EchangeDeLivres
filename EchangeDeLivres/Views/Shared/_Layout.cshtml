@@ -17,13 +17,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Échange de livres", "Index", "Contacts", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink(EchangeDeLivres.Ressources.Resources.HomeTitle, "Index", "Contacts", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink(EchangeDeLivres.Ressources.Resources.Home, "Index", "Home")</li>
+                    <li>@Html.ActionLink(EchangeDeLivres.Ressources.Resources.LanguageChoice, "ChangeLanguage", "Home", new { linkBack = Request.RawUrl, languageCode = EchangeDeLivres.Ressources.Resources.languageCode }, null)</li>
+                    <li>@Html.ActionLink(EchangeDeLivres.Ressources.Resources.About, "About", "Home")</li>
+                    <li>@Html.ActionLink(EchangeDeLivres.Ressources.Resources.Contact, "Contact", "Home")</li>
+                    <li>@Html.ActionLink(EchangeDeLivres.Ressources.Resources.AddBook, "AddBook", "Book")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>

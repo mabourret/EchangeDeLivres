@@ -42,23 +42,23 @@ namespace EchangeDeLivres.Models
     public class ForgotViewModel
     {
         [Required]
-        [Display(Name = "Courrier électronique")]
+        [Display(Name = "Mail", ResourceType = typeof(Ressources.Resources))]
         public string Email { get; set; }
     }
 
     public class LoginViewModel
     {
         [Required]
-        [Display(Name = "Courrier électronique")]
+        [Display(Name = "Mail", ResourceType = typeof(Ressources.Resources))]
         [EmailAddress]
         public string Email { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
-        [Display(Name = "Mot de passe")]
+        [Display(Name = "Password", ResourceType = typeof(Ressources.Resources))]
         public string Password { get; set; }
 
-        [Display(Name = "Mémoriser le mot de passe ?")]
+        [Display(Name = "RememberMe", ResourceType = typeof(Ressources.Resources))]
         public bool RememberMe { get; set; }
     }
 
@@ -66,17 +66,17 @@ namespace EchangeDeLivres.Models
     {
         [Required]
         [EmailAddress]
-        [Display(Name = "Courrier électronique")]
+        [Display(Name = "Mail", ResourceType = typeof(Ressources.Resources))]
         public string Email { get; set; }
 
         [Required]
         [StringLength(100, ErrorMessage = "La chaîne {0} doit comporter au moins {2} caractères.", MinimumLength = 6)]
         [DataType(DataType.Password)]
-        [Display(Name = "Mot de passe")]
+        [Display(Name = "Password", ResourceType = typeof(Ressources.Resources))]
         public string Password { get; set; }
 
         [DataType(DataType.Password)]
-        [Display(Name = "Confirmer le mot de passe ")]
+        [Display(Name = "ConfirmPassword", ResourceType = typeof(Ressources.Resources))]
         [Compare("Password", ErrorMessage = "Le mot de passe et le mot de passe de confirmation ne correspondent pas.")]
         public string ConfirmPassword { get; set; }
     }
@@ -85,17 +85,17 @@ namespace EchangeDeLivres.Models
     {
         [Required]
         [EmailAddress]
-        [Display(Name = "Courrier électronique")]
+        [Display(Name = "Mail", ResourceType = typeof(Ressources.Resources))]
         public string Email { get; set; }
 
         [Required]
         [StringLength(100, ErrorMessage = "La chaîne {0} doit comporter au moins {2} caractères.", MinimumLength = 6)]
         [DataType(DataType.Password)]
-        [Display(Name = "Mot de passe")]
+        [Display(Name = "Password", ResourceType = typeof(Ressources.Resources))]
         public string Password { get; set; }
 
         [DataType(DataType.Password)]
-        [Display(Name = "Confirmer le mot de passe")]
+        [Display(Name = "ConfirmPassword", ResourceType = typeof(Ressources.Resources))]
         [Compare("Password", ErrorMessage = "Le nouveau mot de passe et le mot de passe de confirmation ne correspondent pas.")]
         public string ConfirmPassword { get; set; }
 

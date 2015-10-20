@@ -1,20 +1,23 @@
 ﻿@model EchangeDeLivres.Models.ExternalLoginListViewModel
 @using Microsoft.Owin.Security
 
-<h4>Utilisez un autre service pour vous connecter.</h4>
+<h4>@EchangeDeLivres.Ressources.Resources.OtherLoginService</h4>
 <hr />
 @{
     var loginProviders = Context.GetOwinContext().Authentication.GetExternalAuthenticationTypes();
-    if (loginProviders.Count() == 0) {
+    if (loginProviders.Count() == 0)
+    {
         <div>
             <p>
-                Il n'existe aucun service d'authentification externe configuré. Consultez <a href="http://go.microsoft.com/fwlink/?LinkId=403804">cet article</a>
-                pour des détails sur la configuration de cette application ASP.NET en vue de la prise en charge de la connexion via des services externes.
+                @EchangeDeLivres.Ressources.Resources.ExternalAuth1 <a href="http://go.microsoft.com/fwlink/?LinkId=313242">@EchangeDeLivres.Ressources.Resources.ExternalAuth2</a>
+                @EchangeDeLivres.Ressources.Resources.ExternalAuth3
             </p>
         </div>
     }
-    else {
-        using (Html.BeginForm("ExternalLogin", "Account", new { ReturnUrl = Model.ReturnUrl })) {
+    else
+    {
+        using (Html.BeginForm("ExternalLogin", "Account", new { ReturnUrl = Model.ReturnUrl }))
+        {
             @Html.AntiForgeryToken()
             <div id="socialLoginList">
                 <p>

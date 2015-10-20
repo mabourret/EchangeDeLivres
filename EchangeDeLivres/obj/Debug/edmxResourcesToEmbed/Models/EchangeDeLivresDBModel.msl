@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="tblDetailLivreAjouters">
+      <EntityTypeMapping TypeName="Model.tblDetailLivreAjouter">
+        <MappingFragment StoreEntitySet="tblDetailLivreAjouter">
+          <ScalarProperty Name="IdLivreAjouter" ColumnName="IdLivreAjouter" />
+          <ScalarProperty Name="EtatLivreAjouter" ColumnName="EtatLivreAjouter" />
+          <ScalarProperty Name="PrixLivreAjouter" ColumnName="PrixLivreAjouter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEtduiants">
+      <EntityTypeMapping TypeName="Model.tblEtduiant">
+        <MappingFragment StoreEntitySet="tblEtduiant">
+          <ScalarProperty Name="IdEtudiant" ColumnName="IdEtudiant" />
+          <ScalarProperty Name="NomEtudiant" ColumnName="NomEtudiant" />
+          <ScalarProperty Name="EmailEtd" ColumnName="EmailEtd" />
+          <ScalarProperty Name="AdresseEtd" ColumnName="AdresseEtd" />
+          <ScalarProperty Name="MotPassEtd" ColumnName="MotPassEtd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblGestionnaires">
+      <EntityTypeMapping TypeName="Model.tblGestionnaire">
+        <MappingFragment StoreEntitySet="tblGestionnaire">
+          <ScalarProperty Name="IdGestionnaire" ColumnName="IdGestionnaire" />
+          <ScalarProperty Name="NomGestionnaire" ColumnName="NomGestionnaire" />
+          <ScalarProperty Name="EmailGestionnaire" ColumnName="EmailGestionnaire" />
+          <ScalarProperty Name="MotPassGestionnaire" ColumnName="MotPassGestionnaire" />
+          <ScalarProperty Name="AdresseCoop" ColumnName="AdresseCoop" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tlbLivres">
+      <EntityTypeMapping TypeName="Model.tlbLivre">
+        <MappingFragment StoreEntitySet="tlbLivre">
+          <ScalarProperty Name="IdLivre" ColumnName="IdLivre" />
+          <ScalarProperty Name="CodeLivre" ColumnName="CodeLivre" />
+          <ScalarProperty Name="TitreLivre" ColumnName="TitreLivre" />
+          <ScalarProperty Name="AuteurLivre" ColumnName="AuteurLivre" />
+          <ScalarProperty Name="NbPagesLivre" ColumnName="NbPagesLivre" />
+          <ScalarProperty Name="PrixLivre" ColumnName="PrixLivre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

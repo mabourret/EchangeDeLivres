@@ -214,6 +214,16 @@
       <DependentUpon>EchangeDeLivresDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ressources\Resources.fr-CA1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.fr-CA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Ressources\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -309,6 +319,14 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201510090248143_Initial.resx">
       <DependentUpon>201510090248143_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Resources.fr-CA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.fr-CA1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
