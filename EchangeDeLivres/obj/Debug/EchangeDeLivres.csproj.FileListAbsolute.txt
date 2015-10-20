@@ -69,3 +69,7 @@ c:\users\marc-antoine\documents\visual studio 2015\Projects\EchangeDeLivres\Echa
 c:\users\marc-antoine\documents\visual studio 2015\Projects\EchangeDeLivres\EchangeDeLivres\obj\Debug\EchangeDeLivres.Migrations.Initial.resources
 c:\users\marc-antoine\documents\visual studio 2015\Projects\EchangeDeLivres\EchangeDeLivres\obj\Debug\EchangeDeLivres.csproj.GenerateResource.Cache
 C:\Users\Marc-Antoine\Documents\Visual Studio 2015\Projects\EchangeDeLivres\EchangeDeLivres\obj\Debug\EchangeDeLivres.csprojResolveAssemblyReference.cache
+C:\Users\Marc-Antoine\Documents\Visual Studio 2015\Projects\EchangeDeLivres\EchangeDeLivres\obj\Debug\EchangeDeLivres.Ressources.Resources.resources
+C:\Users\Marc-Antoine\Documents\Visual Studio 2015\Projects\EchangeDeLivres\EchangeDeLivres\obj\Debug\EchangeDeLivres.Ressources.Resources.fr-CA.resources
+C:\Users\Marc-Antoine\Documents\Visual Studio 2015\Projects\EchangeDeLivres\EchangeDeLivres\bin\fr-CA\EchangeDeLivres.resources.dll
+C:\Users\Marc-Antoine\Documents\Visual Studio 2015\Projects\EchangeDeLivres\EchangeDeLivres\obj\Debug\fr-CA\EchangeDeLivres.resources.dll

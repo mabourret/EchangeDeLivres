@@ -5,6 +5,7 @@ namespace EchangeDeLivres.Migrations
     using System.Data.Entity.Migrations;
     using ContactManager.Models;
     using System.Linq;
+    using EchangeDeLivres.Models;
 
     internal sealed class Configuration : DbMigrationsConfiguration<EchangeDeLivres.Models.ApplicationDbContext>
     {
@@ -15,7 +16,7 @@ namespace EchangeDeLivres.Migrations
 
         protected override void Seed(EchangeDeLivres.Models.ApplicationDbContext context)
         {
-            context.Contacts.AddOrUpdate(p => p.Name,
+            context.Database.AddOrUpdate(p => p.Name,
         new Contact
         {
             Name = "Debra Garcia",
@@ -60,8 +61,19 @@ namespace EchangeDeLivres.Migrations
              State = "WA",
              Zip = "10999",
              Email = "diliana@example.com",
+         },
+
+         new Livre
+         {
+             CodeLivre = "123abc",
+             AuteurLivre ="John Doe",
+             NbPagesLivre = 12,
+             PrixLivre = 2444,
+             TitreLivre = "Comment mourrir en retard",
          }
          );
+
+
         }
     }
 }

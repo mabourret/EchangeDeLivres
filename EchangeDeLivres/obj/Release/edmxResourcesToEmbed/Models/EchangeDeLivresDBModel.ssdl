@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblDetailLivreAjouter">
+    <Key>
+      <PropertyRef Name="IdLivreAjouter" />
+    </Key>
+    <Property Name="IdLivreAjouter" Type="int" Nullable="false" />
+    <Property Name="EtatLivreAjouter" Type="varchar" MaxLength="50" />
+    <Property Name="PrixLivreAjouter" Type="real" />
+  </EntityType>
+  <EntityType Name="tblEtduiant">
+    <Key>
+      <PropertyRef Name="IdEtudiant" />
+    </Key>
+    <Property Name="IdEtudiant" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="NomEtudiant" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EmailEtd" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AdresseEtd" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MotPassEtd" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblGestionnaire">
+    <Key>
+      <PropertyRef Name="IdGestionnaire" />
+    </Key>
+    <Property Name="IdGestionnaire" Type="int" Nullable="false" />
+    <Property Name="NomGestionnaire" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EmailGestionnaire" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MotPassGestionnaire" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AdresseCoop" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tlbLivre">
+    <Key>
+      <PropertyRef Name="IdLivre" />
+    </Key>
+    <Property Name="IdLivre" Type="int" Nullable="false" />
+    <Property Name="CodeLivre" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TitreLivre" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AuteurLivre" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="NbPagesLivre" Type="int" Nullable="false" />
+    <Property Name="PrixLivre" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="tblDetailLivreAjouter" EntityType="Self.tblDetailLivreAjouter" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEtduiant" EntityType="Self.tblEtduiant" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblGestionnaire" EntityType="Self.tblGestionnaire" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tlbLivre" EntityType="Self.tlbLivre" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
